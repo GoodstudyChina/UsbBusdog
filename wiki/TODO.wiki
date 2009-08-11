@@ -1,0 +1,15 @@
+#summary Basic issues that need to be resolved.
+
+= Installation =
+
+Need to figure out to reliably install the driver, attach it to devices and make the service start.
+
+I have a couple of tools to help (console.exe, wdffltrinstall.exe, busdog.inf).
+
+At the moment the filter exits prematurely if I dont install it as a usb class filter
+
+See http://www.osronline.com/article.cfm?id=446 (KMDF Filter Driver: 30-Minutes -- Installation: Ah...Somewhat Longer) for more information
+
+= BusDog->UserCode reporting =
+
+This could be handled a number of ways. Currently I have a IOCTL interface that I intend to play around with.
