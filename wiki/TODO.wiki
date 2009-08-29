@@ -6,10 +6,16 @@ Need to figure out to reliably install the driver, attach it to devices and make
 
 I have a couple of tools to help (console.exe, wdffltrinstall.exe, busdog.inf).
 
-At the moment the filter exits prematurely if I dont install it as a usb class filter
+At the moment the filter is installed as a lower filter for USB and HID classes via the inf
 
 See http://www.osronline.com/article.cfm?id=446 (KMDF Filter Driver: 30-Minutes -- Installation: Ah...Somewhat Longer) for more information
 
-= BusDog->UserCode reporting =
+= BusDog UserCode reporting =
 
-This could be handled a number of ways. Currently I have a IOCTL interface that I intend to play around with.
+Currently I have a IOCTL that user code can grab the trace buffer from but the (virtual) machine is severely slowed down when I trace a high volume bulk usb device.
+
+Some ideas to combat this problem:
+
+ - try not to allocate and deallocate trace items all the time (use a ring buffer of trace items and just reallocate if an item needs more space)
+
+ - currently the trace list is synchronized by a WDFWAITLOCK which might be causing troubles from excessive context switching or something maybe I could use a WDFQUEUE (WdfIoQueueCreate etc) apparently they have fast locking mechanisms
