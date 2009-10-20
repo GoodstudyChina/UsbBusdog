@@ -27,3 +27,17 @@ Turns out the culprit was just logging was flooding the system (free builds run 
 = Adjustable debug logging levels =
 
 Probably add another ioctl for this...
+
+==Update==
+
+Completed
+
+=Manual Queue for user trace buffer requests=
+
+This would be a better design that way the requests would be pending to the user code and we would not have to poll for data.
+
+=Beta Release todo=
+
+  * put version info in code/binaries
+  * sign driver for x64 (probably just test signed atm)
+  * make sure install/uninstall of driver works nicely
