@@ -1,0 +1,9 @@
+= Version 0.1.2 =
+
+  * bugfix: Added UAC elevation to driver install/uninstall functions
+  * improvement: added debug symbols to release packages
+  * improvement: more detailed reporting when driver install/uninstall issues occur
+
+= Version 0.1.1 =
+
+  * bugfix: fixed driver uninstall failure when the users temporary directory had white-space in the path
