@@ -1,0 +1,27 @@
+2009-10-29  Daniel Newton  <djpnewton@gmail.com>
+
+	* gui/busdog/MainForm.cs:
+	* gui/busdog/VistaSecurity.cs: Added UAC elevation to driver
+	install/uninstall functions
+
+2009-10-28  Daniel Newton  <djpnewton@gmail.com>
+
+	* make_package.bat, gui/driverRes/build.xml: add debug symbols to release
+	packages
+
+	* filter/BusDogMain.c: removed obsolete WDM preprocess code
+
+2009-10-27  Daniel Newton  <djpnewton@gmail.com>
+
+	* filter/busdog.inx: fix wdf section in inf
+
+	* gui/busdog/DriverManagement.cs: call wdf coinstaller in conjunction with
+	dpinst so that wdf (which the driver relies on) will be installed
+
+	* gui/busdog/MainForm.cs (InstallDriver, UninstallDriver): show user
+	reason why driver installation/uninstallation failed
+
+2009-10-23  Daniel Newton  <djpnewton@gmail.com>
+
+    * gui/busdog/DriverManagement.cs (UninstallDriver): fixed issue with 
+	uninstalling driver from gui when temp directory has whitespace in the path
