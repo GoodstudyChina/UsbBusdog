@@ -1,0 +1,16 @@
+#summary A plan to integrate busdog with the Virtual USB Analyzer!
+
+= Introduction =
+
+The Virtual USB Analyzer (http://vusb-analyzer.sourceforge.net) is a nice looking graphical USB traffic analyzer, I would like to package it up for windows and get busdog to output a USB traffic log that the Virtual USB Analyzer can parse.
+
+
+= Running vusb-analyzer on windows =
+
+== Prerequisites ==
+
+  * Python 2.6
+  * GTK+ for win32 (http://gtk-win.sourceforge.net)
+  * pygtk, pygobject, pycairo (http://www.pygtk.org/downloads.html)
+  * gnomecanvas (work in progress)
+  * ...
