@@ -1,3 +1,11 @@
+= Version 0.2.0 =
+
+  * improvement: Added support for tracing usb bus resets and pipe resets
+  * improvement: Changed trace buffer requests to be blocking (busdog GUI no longer has to poll for data)
+  * improvement: Added tracing of usb descriptors
+  * improvement: Added option to automatically start tracing new devices as they arrive
+  * improvement: Added support for tracing isochronous USB transfers
+
 = Version 0.1.2 =
 
   * bugfix: Added UAC elevation to driver install/uninstall functions
