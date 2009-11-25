@@ -6,6 +6,7 @@
   * improvement: Added option to automatically start tracing new devices as they arrive
   * improvement: Added support for tracing isochronous USB transfers
   * improvement: Added detection of mismatched GUI/driver combo
+  * improvement: Added a maximum trace count option to the trace list tab
 
 = Version 0.1.2 =
 
