@@ -14,3 +14,11 @@ The Virtual USB Analyzer (http://vusb-analyzer.sourceforge.net) is a nice lookin
   * pygtk, pygobject, pycairo (http://www.pygtk.org/downloads.html)
   * gnomecanvas (win32 binary: http://ftp.gnome.org/pub/gnome/binaries/win32/libgnomecanvas/, win32 python gnome canvas wrapper...work in progress)
   * ...
+
+== Ideas ==
+
+Maybe I could replace gnomecanvas with a cairo based alternative:
+
+  * Gaphas is a canvas widget for GTK+ implemented with Cairo in pure python
+  * goocanvas
+  * more at http://cairographics.org/examples/
