@@ -1,3 +1,8 @@
+= Version 0.2.1 =
+
+  * improvement: Added support for tracing serial and parallel ports
+  * improvement: Added "Copy Traces", "Copy Selected Traces" and "Save to File" buttons to trace view
+
 = Version 0.2.0 =
 
   * improvement: Added support for tracing usb bus resets and pipe resets
