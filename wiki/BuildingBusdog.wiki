@@ -14,7 +14,7 @@ It is a good idea to create a system restore point before mucking about with USB
 
   * Start a WDK build environment (eg. `Start Menu\Programs\Windows Driver Kits\WDK 7600.16385.1\Build Environments\Windows 7\x86 Checked Build Environment`)
   * Navigate to the busdog filter source directory (eg. `C:\projects\busdog\filter`)
-  * Build the filter driver via the "build" command (eg. `build -wg`, build with shown warnings and colored output) which will build the filter driver according to the makefile (`sources`) in that directory.
+  * Build the filter driver via the "build" command (eg. `build -wg`, build with warnings shown and colored output) which will build the filter driver according to the makefile (`sources`) in that directory.
 
 = Building the GUI =
 
